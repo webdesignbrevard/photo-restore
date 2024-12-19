@@ -1,8 +1,8 @@
 {
-    "name": "Code Stitch Web Designs",
-    "email": "help@codestitch.app",
-    "phoneForTel": "555-123-4567",
-    "phoneFormatted": "(555) 123-4567",
+    "name": "Sunshine Photo Restoration",
+    "email": "sunshinephotorestoration@gmail.com",
+    "phoneForTel": "321-307-0195",
+    "phoneFormatted": "(321) 307-0195",
     "address": {
         "lineOne": "First Address Line",
         "lineTwo": "Second Address Line",
@@ -12,10 +12,10 @@
         "mapLink": "https://goo.gl/maps/UAQn4vuGDiwv7DV39"
     },
     "social": {
-        "facebook": "https://www.facebook.com/",
+        "facebook": "https://www.facebook.com/profile.php?id=61564607062104",
         "twitter": "https://twitter.com/",
         "instagram": "https://www.instagram.com/",
         "youtube": "https://www.youtube.com/"
     },
-    "domain": "https://www.codestitch.app"
+    "domain": "https://www.sunshinephotorestoration.com"
 }

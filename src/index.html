@@ -4,251 +4,381 @@ description: "The main branch of the advanced starter kit. Contains a basic 11ty
 additional functionality. Similar to our Intermediate Kits."
 permalink: '/'
 eleventyNavigation:
-    key: 'Main'
-    order: '100'
+key: 'Main'
+order: '100'
 ---
 
 {% block head %}
-    <link rel="stylesheet" href="/assets/css/local.css">
+<link rel="stylesheet" href="/assets/css/local.css">
+<script src="./assets/js/FAQ.js" defer></script>
 {% endblock %}
 
 {% extends 'layouts/base.html' %}
 
 {% block body %}
-    <!-- ============================================ -->
-    <!--                    Hero                      -->
-    <!-- ============================================ -->
+<!-- ============================================ -->
+<!--                    Hero                      -->
+<!-- ============================================ -->
 
-    <section id="hero-1621">
-        <div class="cs-container">
-            <div class="cs-content">
-                <span class="cs-topper">For any small business need</span>
-                <h1 class="cs-title">
-                    The CodeStitch Advanced Starter Kit - Main Branch
-                </h1>
-                <a href="" class="cs-button-solid">Call to Action</a>
-                <!--Bottom Corners-->
-                <div class="cs-corners" aria-hidden="true"></div>
-            </div>
-            <ul class="cs-card-group">
-                <li class="cs-item">
-                    <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/adv-kit-styles.svg" alt="icon" width="48" height="48">
-                    <h2 class="cs-h3">LESS/SASS</h2>
-                    <p class="cs-item-text">
-                        Both preprocessors, alongside vanilla CSS, all available under one kit
-                    </p>
-                </li>
-                <li class="cs-item">
-                    <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/adv-kit-optimize.svg" alt="icon" width="48" height="48">
-                    <h2 class="cs-h3">Optimization</h2>
-                    <p class="cs-item-text">
-                        Get better Pagespeed scores, quicker, with automatic critical CSS inlining, minifiction and asset optimization
-                    </p>
-                </li>
-                <li class="cs-item">
-                    <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/adv-kit-cart.svg" alt="icon" width="48" height="48">
-                    <h2 class="cs-h3">eCommerce</h2>
-                    <p class="cs-item-text">
-                        Create the fastest of eCommerce stores with a seamless Shopify integration
-                    </p>
-                </li>
-                <li class="cs-item">
-                    <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/adv-kit-cms.svg" alt="icon" width="48" height="48">
-                    <h2 class="cs-h3">CMS</h2>
-                    <p class="cs-item-text">
-                        Free time and empower your clients with a Decap content management system
-                    </p>
-                </li>
-            </ul>
+
+<section id="hero-1946">
+	<div class="cs-container">
+		<div class="cs-content">
+			<h2 class="cs-title">Building Your Future Accommodation</h2>
+			<div class="cs-flex">
+				<p class="cs-text">We successfully cope with tasks of varying complexity, provide long-term guarantees
+					and regularly master new technologies.</p>
+				<a href="" class="cs-button-solid">Read More</a>
+			</div>
+		</div>
+		<picture class="cs-picture">
+			<source media="(min-width: 601px)"
+				srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Landscapes/construction-site.png">
+			<source media="(max-width: 600px)"
+				srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Landscapes/construction-site.png">
+			<img decoding="async"
+				src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Landscapes/construction-site.png"
+				alt="construction site" width="1280" height="510">
+		</picture>
+		<ul class="cs-card-group">
+			<li class="cs-item">
+				<picture class="cs-icon-picture">
+					<img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/tool.svg"
+						decoding="async" alt="icon" width="40" height="40" aria-hidden="true">
+				</picture>
+				<!-- Text Grouped For Flexbox-->
+				<div class="cs-text-group">
+					<h3 class="cs-h3">Clean and Scan</h3>
+					<p class="cs-item-text">Your photos will be hand cleaned to remove dust and photo cleaner to bring
+						out the natural luster of the photo. Then will be digitally scanned using a high-resolution
+						scanner to preserve your most precious memories.</p>
+				</div>
+			</li>
+			<li class="cs-item">
+				<picture class="cs-icon-picture">
+					<img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/hard-hat.svg"
+						decoding="async" alt="icon" width="40" height="40" aria-hidden="true">
+				</picture>
+				<!-- Text Grouped For Flexbox-->
+				<div class="cs-text-group">
+					<h3 class="cs-h3">Repair</h3>
+					<p class="cs-item-text">We expertly fix damaged, faded, or torn photographs, bringing them back to
+						life with meticulous care. Whether it's removing blemishes or reconstructing missing parts, we
+						ensure your photos look like they were taken today.</p>
+				</div>
+			</li>
+			<li class="cs-item">
+				<picture class="cs-icon-picture">
+					<img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/double-bed.svg"
+						decoding="async" alt="icon" width="40" height="40" aria-hidden="true">
+				</picture>
+				<!-- Text Grouped For Flexbox-->
+				<div class="cs-text-group">
+					<h3 class="cs-h3">Colorize</h3>
+					<p class="cs-item-text">We can breathe new life into black-and-white, sepia, and faded photographs
+						by adding rich, natural colors. We carefully research and apply authentic hues to transform your
+						vintage photos, making them more vibrant and lifelike.</p>
+				</div>
+			</li>
+			<li class="cs-item">
+				<picture class="cs-icon-picture">
+					<img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/building.svg"
+						decoding="async" alt="icon" width="40" height="40" aria-hidden="true">
+				</picture>
+				<!-- Text Grouped For Flexbox-->
+				<div class="cs-text-group">
+					<h3 class="cs-h3">Printing</h3>
+					<p class="cs-item-text">We can handle the printing of your photos </p>
+				</div>
+			</li>
+		</ul>
+	</div>
+</section>
+
+
+<!-- ============================================ -->
+<!--                 Side By Side                 -->
+<!-- ============================================ -->
+
+<section id="sbs-523">
+	<div class="cs-container">
+		<div class="cs-content">
+			<h2 class="cs-title">Colorize</h2>
+			<p class="cs-text">
+				We can breathe new life into black-and-white, sepia, and faded photographs by adding rich, natural
+				colors. We carefully research and apply authentic hues to transform your vintage photos, making them
+				more vibrant and lifelike.
+			</p>
+			<a href="" class="cs-button-solid">Read More</a>
+		</div>
+
+
+
+		<div class="cs-image-group compare">
+			<main>
+				<div class="container container1">
+					<div class="image-container">
+						<img class="image-before slider-image" src="./assets/images/2kids_compare_web_before.jpg"
+							alt="color photo" />
+						<img class="image-after slider-image" src="./assets/images/2kids_compare_web_after.jpg"
+							alt="black and white" />
+					</div>
+					<input type="range" min="0" max="100" value="50" aria-label="Percentage of before photo shown"
+						class="slider slider1" />
+					<div class="slider-line" aria-hidden="true"></div>
+					<div class="slider-button" aria-hidden="true">
+						<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+							viewBox="0 0 256 256">
+							<rect width="256" height="256" fill="none"></rect>
+							<line x1="128" y1="40" x2="128" y2="216" fill="none" stroke="currentColor"
+								stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line>
+							<line x1="96" y1="128" x2="16" y2="128" fill="none" stroke="currentColor"
+								stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line>
+							<polyline points="48 160 16 128 48 96" fill="none" stroke="currentColor"
+								stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline>
+							<line x1="160" y1="128" x2="240" y2="128" fill="none" stroke="currentColor"
+								stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line>
+							<polyline points="208 96 240 128 208 160" fill="none" stroke="currentColor"
+								stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline>
+						</svg>
+					</div>
+				</div>
+
+			</main>
+		</div>
+	</div>
+</section>
+
+<!-- ============================================ -->
+<!--                 Side By Side reverse         -->
+<!-- ============================================ -->
+
+<section id="sbs-523" class="reverse">
+	<div class="cs-container">
+		<div class="cs-content">
+			<h2 class="cs-title">Tears and creases</h2>
+			<p class="cs-text">
+				Damaged photos don’t have to mean damaged memories. Our Tears and Creases service expertly repairs rips,
+				folds, and creases, restoring your images to their original beauty. Let us bring your cherished
+				photographs back to life with care and precision.
+			</p>
+			<a href="" class="cs-button-solid">Read More</a>
+		</div>
+
+		<div class="cs-image-group compare">
+			<div class="cs-image-group compare">
+				<main>
+					<div class="container container2">
+						<div class="image-container">
+							<img class="image-before slider-image"
+								src="./assets/images/firetruck_compare_web_before.jpg" alt="color photo" />
+							<img class="image-after slider-image" src="./assets/images/firetruck_compare_web_after.jpg"
+								alt="black and white" />
+						</div>
+						<input type="range" min="0" max="100" value="10" aria-label="Percentage of before photo shown"
+							class="slider slider2" />
+						<div class="slider-line" aria-hidden="true"></div>
+						<div class="slider-button" aria-hidden="true">
+							<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+								viewBox="0 0 256 256">
+								<rect width="256" height="256" fill="none"></rect>
+								<line x1="128" y1="40" x2="128" y2="216" fill="none" stroke="currentColor"
+									stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line>
+								<line x1="96" y1="128" x2="16" y2="128" fill="none" stroke="currentColor"
+									stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line>
+								<polyline points="48 160 16 128 48 96" fill="none" stroke="currentColor"
+									stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline>
+								<line x1="160" y1="128" x2="240" y2="128" fill="none" stroke="currentColor"
+									stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line>
+								<polyline points="208 96 240 128 208 160" fill="none" stroke="currentColor"
+									stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline>
+							</svg>
+						</div>
+					</div>
+
+				</main>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- ============================================ -->
+<!--                 Side By Side                 -->
+<!-- ============================================ -->
+
+<section id="sbs-523">
+	<div class="cs-container">
+		<div class="cs-content">
+			<h2 class="cs-title">Reconstruct</h2>
+			<p class="cs-text">
+				We can work on piecing together photos that have been torn apart, restoring them to their original
+				glory. Reconstruction through meticulously aligning to repair each fragment, ensuring your cherished
+				memories are whole again. </p>
+			<a href="" class="cs-button-solid">Read More</a>
+		</div>
+
+
+
+		<div class="cs-image-group compare">
+			<main>
+				<div class="container container3">
+					<div class="image-container">
+						<img class="image-before slider-image" src="./assets/images/carriage_web_before.jpg"
+							alt="color photo" />
+						<img class="image-after slider-image" src="./assets/images/carriage_web_after.jpg"
+							alt="black and white" />
+					</div>
+					<input type="range" min="0" max="100" value="50" aria-label="Percentage of before photo shown"
+						class="slider slider3" />
+					<div class="slider-line" aria-hidden="true"></div>
+					<div class="slider-button" aria-hidden="true">
+						<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+							viewBox="0 0 256 256">
+							<rect width="256" height="256" fill="none"></rect>
+							<line x1="128" y1="40" x2="128" y2="216" fill="none" stroke="currentColor"
+								stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line>
+							<line x1="96" y1="128" x2="16" y2="128" fill="none" stroke="currentColor"
+								stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line>
+							<polyline points="48 160 16 128 48 96" fill="none" stroke="currentColor"
+								stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline>
+							<line x1="160" y1="128" x2="240" y2="128" fill="none" stroke="currentColor"
+								stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line>
+							<polyline points="208 96 240 128 208 160" fill="none" stroke="currentColor"
+								stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline>
+						</svg>
+					</div>
+				</div>
+
+			</main>
+		</div>
+	</div>
+</section>
+
+<!-- ============================================ -->
+<!--                     FAQ                      -->
+<!-- ============================================ -->
+
+<section id="faq-350">
+	<div class="cs-container">
+		<h2 class="cs-title">Frequently Asked Questions</h2>
+		<div class="cs-content">
+			
+			<ul class="cs-faq-group">
+				<!-- Active class added as default -->
+				<li class="cs-faq-item">
+					<button class="cs-button">
+						<span class="cs-button-text">
+							How long do photos take to be restored?
+						</span>
+					</button>
+					<p class="cs-item-p">
+						The time required for restoration depends on the complexity of the damage,number of photos, and
+						backlog of other clients. Generally, it can take <b>anywhere from a few days to a week</b>,
+						though larger bulk jobs will require more time.
+					</p>
+				</li>
+				<li class="cs-faq-item">
+					<button class="cs-button">
+						<span class="cs-button-text">
+							What types of damage can you repair?
+						</span>
+					</button>
+					<p class="cs-item-p">
+						We can repair a wide range of issues, including tears, scratches, stains, fading, water damage,
+						and discoloration. </p>
+				</li>
+				<li class="cs-faq-item">
+					<button class="cs-button">
+						<span class="cs-button-text">
+							Do I need to send you the original photo?
+						</span>
+					</button>
+					<p class="cs-item-p">
+						No, you can send us a high-resolution scan of the original photo if you have the ability to do
+						so. 
+						<br>
+						However, without sending us the photo, or a high-resolution scan, it will be much harder to
+						restore the photo properly. <b>We highly suggest sending us the photo for the best possible
+							results</b>.
+					</p>
+				</li>
+				<li class="cs-faq-item">
+					<button class="cs-button">
+						<span class="cs-button-text">
+							What file formats do you accept?
+						</span>
+					</button>
+					<p class="cs-item-p">
+						For best results, a scan of at least <b>600 DPI in TIFF format</b> is best for restoration.
+						<br>
+						However, We accept various formats, including <b>JPEG, TIFF, and PNG.</b>
+					</p>
+				</li>
+
+			</ul>
+			<ul class="cs-faq-group">
+				<!-- Active class added as default -->
+				<li class="cs-faq-item">
+					<button class="cs-button">
+						<span class="cs-button-text">
+							
+							Can you restore photos that are severely damaged or missing parts?
+						</span>
+					</button>
+					<p class="cs-item-p">
+						Yes, we can reconstruct missing parts of a photo using advanced techniques, though the results
+						depend on the extent of the damage and available reference images.
+					</p>
+				</li>
+				<li class="cs-faq-item">
+					<button class="cs-button">
+						<span class="cs-button-text">
+							What if I'm not satisfied with the results?
+						</span>
+					</button>
+					<p class="cs-item-p">
+						We strive for customer satisfaction and offer revisions if you are not completely happy with the restoration. We will work with you to achieve the desired outcome.
+					</p>
+				</li>
+				<li class="cs-faq-item">
+					<button class="cs-button">
+						<span class="cs-button-text">
+							How will I receive the restored photo?
+						</span>
+					</button>
+					<p class="cs-item-p">
+						We can provide you with a digital file, and a physical print. 
+					</p>
+				</li>
+				<li class="cs-faq-item">
+					<button class="cs-button">
+						<span class="cs-button-text">
+							Do you offer discounts for bulk restorations?
+						</span>
+					</button>
+					<p class="cs-item-p">
+						Yes we do, depending on the amount of photos we can offer a discount. <b> Bulk discounts start at 15 photos.</b>
+					</p>
+				</li>
+			</ul>
+		</div>
+	</div>
+</section>
+
+<!-- ============================================ -->
+<!--                     CTA                      -->
+<!-- ============================================ -->
+
+<section id="cta-697">
+    <div class="cs-container">
+        <div class="cs-content">
+            <h2 class="cs-title">Reviving Memories, One Photo at a Time</h2>
+            <a href="" class="cs-button-solid">Get Started -></a>
         </div>
-
-        <!-- Background Image -->
-        <picture class="cs-background">
-            <source media="(max-width: 600px)"
-            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/meeting-2-m.jpeg">
-            <source media="(min-width: 601px)"
-            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/meeting-2.jpeg">
-            <img loading="lazy" decoding="async"
-            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/meeting-2.jpeg" alt="meeting" width="1920"
-            height="1200" aria-hidden="true">
-        </picture>
-    </section>
-
-    <!-- ============================================ -->
-    <!--                 Side By Side                 -->
-    <!-- ============================================ -->
-
-    <section id="sbs-523">
-        <div class="cs-container">
-            <div class="cs-content">
-                <span class="cs-topper">How it works</span>
-                <h2 class="cs-title">What makes this kit special</h2>
-                <p class="cs-text">
-                    Behind the kit is careful management of the file structure, such that all shared code lives in the "main" branch. Each feature then lives on a separate branch, allowing you to choose what capabilities the project requires.
-                </p>
-                <p class="cs-text">
-                    Some files, namely "package.json", "package-lock.json", ".eleventy.js", and "_includes/base.html", require additions to them when merging new branches. Cloning the repo from a template loses all commit history, so conflicts will arise in these files. These can be resolved by ensuring all unique code is merged into the project.
-                </p>
-                <p class="cs-text">
-                    As such, a basic knowledge of Git is required before using this kit, with a solid grasp of how to resolve merge conflicts strongly advisable. You are welcome to merge in feature branches at a later date, after building the project up, but this may result in more complicated merges.
-                </p>
-                <a href="" class="cs-button-solid">Read More</a>
-            </div>
-            <div class="cs-image-group">
-                <!--Large Image-->
-                <picture class="cs-picture cs-picture-large">
-                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/business-meeting.jpeg">
-                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/business-meeting.jpeg">
-                    <img aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/business-meeting.jpeg" alt="lab" width="334" height="380">
-                </picture>
-                <!--Small Image-->
-                <picture class="cs-picture cs-picture-small">
-                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/business-meeting-women.jpeg">
-                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/business-meeting-women.jpeg">
-                    <img aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/business-meeting-women.jpeg" alt="lab" width="183" height="158">
-                </picture>
-            </div>
-        </div>
-    </section>
-
-    <!-- ============================================ -->
-    <!--                   Steps                      -->
-    <!-- ============================================ -->
-
-    <section id="steps-1172">
-        <div class="cs-container">
-            <div class="cs-content">
-                <span class="cs-topper">Just a few steps before</span>
-                <h2 class="cs-title">How To Get Started</h2>
-                <p class="cs-text">
-                    As this kit relies on merging different branches to get started, we'll need to do a few things first to ensure this happens smoothly and nothing gets missed.
-                </p>
-            </div>
-            <ul class="cs-card-group">
-                <li class="cs-item">
-                    <picture class="cs-picture">
-                        <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/adv-kit-git.svg" alt="icon" width="48" height="48">
-                    </picture>
-                    <h2 class="cs-h3">1. Merge Branches</h2>
-                    <p class="cs-item-text">
-                        Merge the branches you need for the project via the CLI, using "git merge [BRANCH] --allow-unrelated-histories". Resolve any conflicts.
-                    </p>
-                </li>
-
-                <li class="cs-item">
-                    <picture class="cs-picture">
-                        <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/adv-kit-install.svg" alt="icon" width="48" height="48">
-                    </picture>
-                    <h2 class="cs-h3">2. Install Dependencies</h2>
-                    <p class="cs-item-text">
-                        Run "npm install" to install all the packages and plugins needed to make your super awesome website.
-                    </p>
-                </li>
-                <li class="cs-item">
-                    <picture class="cs-picture">
-                        <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/adv-kit-todo.svg" alt="icon" width="48" height="48">
-                    </picture>
-                    <h2 class="cs-h3">3. Check Off Todos</h2>
-                    <p class="cs-item-text">
-                        Search the project for any instance of "CS-TODO". We've marked any actions that need to be taken to get your project up to speed ASAP.
-                    </p>
-                </li>
-                <li class="cs-item">
-                    <picture class="cs-picture">
-                        <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/adv-kit-code.svg" alt="icon" width="48" height="48">
-                    </picture>
-                    <h2 class="cs-h3">4. Get Developing!</h2>
-                    <p class="cs-item-text">If using the sass/less branch, you can move over the starter styles to get a headstart. Otherwise, clear all page data and styles, and begin!</p>
-                </li>
-            </ul>
-        </div>
-        <!--Tire Screech-->
-    </section>
-
-    <!-- ============================================ -->
-    <!--                Why Choose Us                 -->
-    <!-- ============================================ -->
-
-    <section id="why-choose-1657">
-        <div class="cs-container">
-            <div class="cs-content">
-                <div class="cs-flex">
-                    <span class="cs-topper">CSS, LESS and SASS</span>
-                    <h2 class="cs-title">Your favourite CSS syntaxes - all under one roof</h2>
-                </div>
-                <ul class="cs-ul">
-                    <li class="cs-li">
-                        <span class="cs-number">CSS</span>
-                        <p class="cs-li-text">
-                            If you prefer vanilla CSS, everything has already been set up for you. You shouldn't need to merge in the SASS and LESS branches, and the ./starter-styles folder can be deleted.
-                        </p>
-                    </li>
-                    <li class="cs-li">
-                        <span class="cs-number">LESS</span>
-                        <p class="cs-li-text">
-                            If you want to use the LESS preprocessor, make sure the "less" branch has been merged to include the LESS processor. When all branches have been merged, you can find the kit styles in ./starter-styles. Copy these over to /assets/less, or delete them to start from scratch.
-                        </p>
-                    </li>
-                    <li class="cs-li">
-                        <span class="cs-number">SASS</span>
-                        <p class="cs-li-text">
-                            Same as before - merge in the "sass" branch to include the SASS processor. Delete the ./starter-styles folder or copy over the SASS styles into /assets/sass to get a headstart on the project
-                        </p>
-                    </li>
-                </ul>
-            </div>
-            <div class="cs-wrapper">
-                <picture class="cs-picture">
-                    <!--Mobile Image-->
-                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/meeting12.jpg">
-                    <!--Tablet and above Image-->
-                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/meeting12.jpg">
-                    <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/meeting12.jpg" alt="meeting" width="630" height="414">
-                </picture>
-
-                <p class="cs-review">
-                    <svg class="cs-quote" preserveAspectRatio="none" viewBox="0 0 100 93" fill="none" xmlns="http://www.w3.org/2000/svg" preser>
-                        <g opacity=".4" clip-path="url(#a)" fill="var(--quoteColor)"><path d="M22.94 84H0L18.305.854H55L22.94 84ZM67.94 84H45L63.305.854H100L67.94 84Z"/></g>
-                        <defs>
-                            <clipPath id="a-1657"><path fill="#fff" transform="translate(0 .854)" d="M0 0h100v83.146H0z"/></clipPath>
-                        </defs>
-                    </svg>
-                    To minimise the number of merge conflicts, vanilla CSS for these introductory pages are supplied in /assets. Should you wish to carry over the starting kit styles, LESS and SASS versions are supplied outside of ./src
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- ============================================ -->
-    <!--             Side By Side Reverse             -->
-    <!-- ============================================ -->
-
-    <section id="sbsr-1309">
-        <div class="cs-container">
-            <!-- Left Image Section -->
-            <div class="cs-image-group">
-                <!--Floating Box-->
-                <div class="cs-box">
-                    <span class="cs-desc">Building a better website, together</span>
-                </div>
-                <!--Image-->
-                <picture class="cs-picture">
-                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/tax1.jpg">
-                    <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/tax1.jpg">
-                    <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/tax1.jpg" alt="meeting" width="630" height="630" aria-hidden="true">
-                </picture>
-            </div>
-            <!-- Right Content Section-->
-            <div class="cs-content">
-                <span class="cs-topper">Help & Support</span>
-                <h2 class="cs-title">Guidance every step of the way</h2>
-                <p class="cs-text">Outside of a cool new feature, each branch comes with an introductory landing page (just like this one) and a branch-specific README. The landing page gives you a quick overview of the branch, with the README providing more technical details should you wish to expand.</p>
-                <p class="cs-text">Additionally, all project-critical actions that need to be taken have a comment containing "CS-TODO". After merging in your branches, you can search the codebase for "CS-TODO", find the most important changes that need to be made, and action them effortlessly.</p>
-                <p class="cs-text">Finally, if you are still stuck or find a bug in the kit, you can use the CTAs in the header to get directly in touch with the kit creators, or reach out to a community of hundreds of other developers.</p>
-                <p class="cs-text">The kit continues to be supported going forward, with a complete set of tutorial videos and additional feature branches planned in the very near future. Follow our subreddit to stay up to date!</p>
-                <a class="cs-button-solid" aria-label="learn more about our programs" href="">Learn More</a>
-            </div>
-        </div>
-    </section>
+    </div>
+    <!--SVG Waves Background-->
+    <img class="cs-background" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FGraphics%2Fwaves-3.svg" alt="wave graphic" width="1920" height="318" loading="lazy" decoding="async" aria-hidden="true">
+</section>
+                                
 
 {% endblock %}
